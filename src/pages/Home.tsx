@@ -1,7 +1,12 @@
+import { useState } from 'react';
+import Gad7Form from '../components/home/Gad7Form';
+
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
-      <h1 className="text-2xl text-blue-200">Home</h1>
+      <button onClick={() => setShowModal(true)}>Show Modal</button>
+      {showModal ? <Gad7Form /> : null}
     </div>
   );
 };
