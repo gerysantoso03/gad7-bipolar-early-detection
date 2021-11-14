@@ -1,7 +1,11 @@
+import HomeBody from '../components/HomeBody';
+import Navbar from '../components/Navbar';
+
 const Home = () => {
   return (
     <div>
-      <h1 className="text-2xl text-blue-200">Home</h1>
+      <Navbar />
+      <HomeBody />
     </div>
   );
 };
