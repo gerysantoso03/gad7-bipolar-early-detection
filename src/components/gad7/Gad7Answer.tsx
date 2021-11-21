@@ -1,10 +1,11 @@
 import { Dispatch, SetStateAction } from 'react';
+import { asnwerWeight } from '../../types';
 
 type gad7Answer = {
   question: string;
   answer: string;
-  weight: number;
-  setState: Dispatch<SetStateAction<number>>;
+  weight: asnwerWeight;
+  setState: Dispatch<SetStateAction<asnwerWeight>>;
 };
 
 const Gad7Answer = ({ question, answer, weight, setState }: gad7Answer) => {

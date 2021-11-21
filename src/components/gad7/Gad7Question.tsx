@@ -1,15 +1,16 @@
 import { Dispatch, SetStateAction } from 'react';
+import { asnwerWeight } from '../../types';
 import Gad7Answer from './Gad7Answer';
 
 type gad7Question = {
   question: string;
-  setState: Dispatch<SetStateAction<number>>;
+  setState: Dispatch<SetStateAction<asnwerWeight>>;
 };
 
 const Gad7Question = ({ question, setState }: gad7Question) => {
   return (
     <div className="gad7-question">
-      <h4>{question}</h4>
+      <h4 className="text-white text-lg">{question}</h4>
       <div className="radio-buttons">
         <Gad7Answer
           question={question}

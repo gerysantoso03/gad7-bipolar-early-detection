@@ -1,17 +1,17 @@
-
-import { useState } from 'react';
-import Gad7Form from '../components/home/Gad7Form';
-import HomeBody from '../components/HomeBody';
-import Navbar from '../components/Navbar';
+import Hero from '../components/home/Hero';
+import Navbar from '../components/global/Navbar';
+import BipolarMean from '../components/home/BipolarMean';
+import BipolarReason from '../components/home/BipolarReason';
+import BipolarSymptom from '../components/home/BipolarSymptom';
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
     <div>
-      <button onClick={() => setShowModal(true)}>Show Modal</button>
-      {showModal ? <Gad7Form /> : null}
       <Navbar />
-      <HomeBody />
+      <Hero />
+      <BipolarMean />
+      <BipolarReason />
+      <BipolarSymptom />
     </div>
   );
 };
