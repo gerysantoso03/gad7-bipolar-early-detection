@@ -58,16 +58,16 @@ const Gad7Form = () => {
     }
   };
   return (
-    <div className="gad7-modal relative p-4 bg-white">
-      <h1 className="text-center text-3xl font-bold text-indigo-900 mb-2">
+    <div className="gad7-modal p-4 bg-white">
+      <h1 className="text-center text-3xl font-bold text-indigo-900 mb-2 sm:text-xl">
         Generalised Anxiety Disorder - GAD7{' '}
       </h1>
-      <h4 className="text-indigo-100 font-semibold text-xl text-center ">
+      <h4 className="text-indigo-100 font-semibold text-xl text-center sm:text-lg ">
         Over the last 2 weeks, how often you been bothered by any of the
         following problems?
       </h4>
 
-      <div className="gad7-form p-4">
+      <div className="gad7-form p-4 sm:flex sm:flex-col sm:gap-5">
         <Gad7Question
           setState={setQuestion1}
           question="Feeling nervous, anxious or on edge?"

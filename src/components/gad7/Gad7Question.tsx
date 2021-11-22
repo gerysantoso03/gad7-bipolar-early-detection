@@ -10,8 +10,10 @@ type gad7Question = {
 const Gad7Question = ({ question, setState }: gad7Question) => {
   return (
     <div className="gad7-question">
-      <h4 className="text-indigo-100 font-medium text-lg">{question}</h4>
-      <div className="radio-buttons">
+      <h4 className="text-indigo-100 sm:mb-2 font-medium text-lg sm:text-md sm:font-semibold">
+        {question}
+      </h4>
+      <div className="radio-buttons sm:flex-col">
         <Gad7Answer
           question={question}
           setState={setState}

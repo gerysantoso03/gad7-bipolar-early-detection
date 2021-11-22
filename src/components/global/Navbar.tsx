@@ -3,12 +3,12 @@ import Logo from '../../assets/Logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <nav className="flex items-center justify-between bg-teal-500 p-6 sm:p-4">
       <div className="flex items-center flex-shrink-0 text-black mr-6 grip gap-4">
         <div className="w-10">
           <img src={Logo} alt="Cendol Goyang" />
         </div>
-        <span className="text-indigo-900 font-semibold text-2xl">
+        <span className="text-indigo-900 font-semibold text-2xl sm:hidden">
           Cendol Bergoyang
         </span>
       </div>
