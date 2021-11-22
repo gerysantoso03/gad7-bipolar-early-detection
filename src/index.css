@@ -5,6 +5,7 @@
 
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -26,14 +27,14 @@ img {
   width: 100%;
 }
 
-/* Eye Logo Styles */
-/* .eye-logo {
-  width: 500px;
-} */
-
 /* Gad7 Form Styles */
 .gad7-modal {
   background-color: rgb(126, 126, 219);
+}
+
+/* Hero Styles */
+.hero-motivation {
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Style for GAD7 Question */
@@ -129,6 +130,33 @@ img {
 .result-dismiss {
   transition: opacity 1s ease-out;
   animation: result-dismiss 0.7s;
+}
+
+/* Footer Styles */
+.footer-animation {
+  animation: scroll-left 100s linear infinite;
+}
+
+.fade {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 126, 219, 0.7),
+    rgba(158, 158, 221, 0.7)
+  );
+}
+
+/* Footer Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Result Animation */
