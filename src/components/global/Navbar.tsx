@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <Link
         to="/gad7"
-        className="flex flex-row text-indigo-900 font-semibold gap-x-16 text-2xl"
+        className="flex flex-row text-indigo-900 hover:text-indigo-700 font-semibold gap-x-16 text-2xl"
       >
         <h3>Bipolar Early Detection</h3>
       </Link>
