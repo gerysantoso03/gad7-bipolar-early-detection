@@ -50,8 +50,11 @@ const Gad7Form = () => {
       if (weight >= 10 && weight <= 14) {
         setResult(gad7context.moderate);
       }
-      if (weight <= 9) {
+      if (weight > 5 && weight <= 9) {
         setResult(gad7context.mild);
+      }
+      if (weight <= 5) {
+        setResult(gad7context.normal);
       }
 
       setIsResult(true);

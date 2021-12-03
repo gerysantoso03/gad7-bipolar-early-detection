@@ -1,6 +1,13 @@
 import { createContext } from 'react';
 import { Props, result } from '../types';
 
+const normal: result = {
+  title: 'Normal Anxiety',
+  desc: 'Normal Anxiety merupakan keadaan dimana seseorang tidak memiliki gejala kecemasan',
+  treatment:
+    'Hasil diatas merupakan hasil dari sistem yang dimana sistem hanya melakukan analisa berdasarkan gejala gejala umum yang biasa dialami. Untuk melakukan check up lebih lanjut terhadap gangguan tersebut, harap hubungi dokter atau ahli psikologi.',
+};
+
 const mild: result = {
   title: 'Mild Anxiety',
   desc: 'Mild Anxiety adalah tingkat episode dari depresi ringan. Tingkat tersebut melibatkan lebih dari sekedar perasaan sedih sementara. Biasanya orang yang terkena gangguan tersebut tidak menyadarinya. Dampak dari mild anxiety antara lain, cepat marah, merasa putus asa, membenci diri sendiri, kehilangan minat pada aktivitas yang sedang dijalani, kesulitas berkonsentrasi, kurang motivasi, tidak tertarik sosialiasi, perubahan nafsu makan.',
@@ -22,11 +29,11 @@ const severe: result = {
     'Hasil diatas merupakan hasil dari sistem yang dimana sistem hanya melakukan analisa berdasarkan gejala gejala umum yang biasa dialami. Untuk melakukan check up lebih lanjut terhadap gangguan tersebut, harap hubungi dokter atau ahli psikologi.',
 };
 
-export const Gad7Context = createContext({ mild, moderate, severe });
+export const Gad7Context = createContext({ normal, mild, moderate, severe });
 
 const Gad7Provider = ({ children }: Props) => {
   return (
-    <Gad7Context.Provider value={{ mild, moderate, severe }}>
+    <Gad7Context.Provider value={{ normal, mild, moderate, severe }}>
       {children}
     </Gad7Context.Provider>
   );
