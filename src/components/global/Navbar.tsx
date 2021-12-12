@@ -16,7 +16,7 @@ const Navbar = () => {
         to="/gad7"
         className="flex flex-row text-indigo-900 hover:text-indigo-700 font-semibold gap-x-16 text-2xl sm:text-lg"
       >
-        <h3>Bipolar Early Detection</h3>
+        <h3>Axiety Disorders Measuring Tools</h3>
       </Link>
     </nav>
   );
